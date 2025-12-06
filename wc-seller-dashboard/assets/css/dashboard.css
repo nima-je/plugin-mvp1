@@ -1,0 +1,66 @@
+.wcsd-container {
+    font-family: "Tahoma", sans-serif;
+    direction: rtl;
+    background: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+}
+
+.wcsd-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.wcsd-tab-button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.wcsd-tab-button[aria-pressed="true"], .wcsd-tab-button:hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+.wcsd-tab-content { display: none; }
+.wcsd-tab-content.is-active { display: block; }
+
+.wcsd-section { background: #fff; padding: 15px; border: 1px solid #e1e1e1; border-radius: 6px; }
+
+.wcsd-date-form { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; align-items: center; }
+.wcsd-date-form input[type="text"], .wcsd-form input[type="text"], .wcsd-form input[type="number"], .wcsd-form textarea, .wcsd-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.wcsd-date-form label { font-weight: bold; }
+
+.wcsd-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-bottom: 15px; }
+.wcsd-card { background: #f1f1f1; padding: 10px; border-radius: 4px; }
+.wcsd-card-title { font-size: 14px; color: #555; margin-bottom: 5px; }
+.wcsd-card-value { font-size: 18px; font-weight: bold; }
+
+.wcsd-table-wrapper { overflow-x: auto; margin-bottom: 15px; }
+.wcsd-table { width: 100%; border-collapse: collapse; }
+.wcsd-table th, .wcsd-table td { border: 1px solid #ddd; padding: 8px; text-align: right; }
+.wcsd-table th { background: #fafafa; }
+
+.wcsd-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 20px; }
+.wcsd-field { display: flex; flex-direction: column; gap: 4px; }
+
+.wcsd-inline-form { display: inline-block; margin-left: 5px; }
+
+.wcsd-pagination { margin-top: 10px; }
+.wcsd-page { padding: 6px 10px; border: 1px solid #ccc; margin: 0 3px; text-decoration: none; }
+.wcsd-page.active { background: #0073aa; color: #fff; }
+
+.wcsd-notice { padding: 10px; background: #e0ffe0; border: 1px solid #b6d7a8; margin-bottom: 10px; }
+.wcsd-error { padding: 10px; background: #ffe0e0; border: 1px solid #d7a8a8; }
+
+@media (max-width: 600px) {
+    .wcsd-nav { flex-direction: column; }
+}
